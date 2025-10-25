@@ -28,12 +28,15 @@ This project was built with efficiency and modularity in mind, adhering to the a
 * **Device Agnosticism**: The `model_loader.py` includes a `get_device` function to auto-detect a CUDA-enabled GPU (returning `0`) or default to CPU (returning `-1`). For this assignment, the device is explicitly set to CPU in `interface.py` to guarantee compatibility as per the "GPU optional" requirement.
 
 ## Project Structure
+```
 chatbot_project/
-├── interface.py     # Main CLI application, user interaction loop, and integration
-├── model_loader.py  # Handles loading the Hugging Face model and tokenizer
-├── chat_memory.py   # Implements the ChatMemory class with a sliding window
-└── requirements.txt # Python dependencies
+  interface.py
+  model_loader.py
+  chat_memory.py
+  requirements.txt
+  .gitignore
 
+```
 
 ## Setup and Installation
 
