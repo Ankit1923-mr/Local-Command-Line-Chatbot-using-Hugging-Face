@@ -85,4 +85,35 @@ chatbot_project/
 
 The following is a sample session demonstrating the chatbot's conversational memory and special commands.
 
+```
+(venv) C:\Users\ankit\chatbot_project>python interface.py
+Starting local CLI chatbot (type /exit to quit, /clear to reset memory)
 
+Device set to use cpu
+
+Loading model: microsoft/DialoGPT-medium...
+Device set to use cpu
+Model loaded successfully!
+
+User: What is the Capital of Italy?
+Bot: It's capital is Rome
+[Memory: 0/5 turns]
+
+User: and what about France?
+Bot: It's capital is Paris
+[Memory: 1/5 turns]
+
+User: and what about Japan?
+Bot: It's capital is Tokyo.
+[Memory: 2/5 turns]
+
+User: /clear
+Memory cleared.
+
+User: What is the capital of France?
+Bot: The capital of France is Paris.
+[Memory: 0/5 turns]
+
+User: /exit
+Exiting chatbot. Goodbye!
+```
